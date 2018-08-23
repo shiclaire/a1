@@ -9,13 +9,13 @@
 #
 # Parameters: aws_access_key_id, aws_secret_access_key, region
 
-# ————— install ansible & boto —————
+# â€”â€”â€”â€”â€” install ansible & boto â€”â€”â€”â€”â€”
 # Upload Ubuntu source packages
 sudo apt-get update
 # sudo apt upgrade -y
 sudo apt-get -y install software-properties-common
 
-# Add ppa:ansible/ansible to system’s Software Source
+# Add ppa:ansible/ansible to systemâ€™s Software Source
 sudo apt-add-repository ppa:ansible/ansible -y
 
 # Update repository and install ansible
@@ -26,7 +26,7 @@ sudo apt-get -y install python-pip
 # Install boto
 pip install botocore boto boto3
 
-# ————— configure boto —————
+# â€”â€”â€”â€”â€” configure boto â€”â€”â€”â€”â€”
 # Setup AWS credentials/API keys
 mkdir -pv ~/.aws/
 echo "[default]
@@ -44,4 +44,4 @@ localhost \n
 
 # Create playbook config file
 cd ~
-sudo wget -c 
+sudo wget -c https://raw.githubusercontent.com/shiclaire/a1/master/ansible.cfg
