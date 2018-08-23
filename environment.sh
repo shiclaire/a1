@@ -11,17 +11,17 @@
 
 # ————— install ansible & boto —————
 # Upload Ubuntu source packages
-sudo apt-get update
+apt-get update
 # sudo apt upgrade -y
-sudo apt-get -y install software-properties-common
+apt-get -y install software-properties-common
 
 # Add ppa:ansible/ansible to system’s Software Source
-sudo apt-add-repository ppa:ansible/ansible -y
+apt-add-repository ppa:ansible/ansible -y
 
 # Update repository and install ansible
-sudo apt-get update
-sudo apt-get -y install ansible
-sudo apt-get -y install python-pip
+apt-get update
+apt-get -y install ansible
+apt-get -y install python-pip
 
 # Install boto
 pip install botocore boto boto3
