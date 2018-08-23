@@ -23,8 +23,8 @@ mkdir -pv ~/.aws/
 
 echo "
 [default]
-aws_access_key_id = AKIAJPAFHG7QO7P5W6EA 
-aws_secret_access_key = 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 "> ~/.aws/credentials
+aws_access_key_id =  
+aws_secret_access_key =  "> ~/.aws/credentials
 
 sudo chmod 666 ~/.aws/credentials
 # setup default AWS region
